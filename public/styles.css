@@ -1,8 +1,26 @@
 body {
-    background-color: yellow;
+    background-color: #DDDDDD;
 }
 
 
 h1 {
-  text-align: center;
+   color: #111;
+   font-family: 'Helvetica Neue', sans-serif;
+   font-size: 75px;
+   font-weight: bold; l
+   etter-spacing: -1px;
+   line-height: 1;
+    text-align: center;
+}
+
+#title{
+background-color: red;
+
+
+}
+
+
+
+.header {
+  background-color: #A9A9A9
 }
