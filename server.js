@@ -7,21 +7,21 @@ var mongoose = require('mongoose');
 
 
 //connect to mongoDB
-mongoose.connect ('mongodb://localhost:27017/listingsDb');
+mongoose.connect ('mongodb://localhost:27017/realestate');
 
-//define albumSchema
+
   var listingSchema = mongoose.Schema({
-      _id : Number, //*******************??????NOT SURE OF ID FORMAT or If i need to put it in
       cost : Number,
+      rent : Number,
       sqft: Number,
-      city : String,
-      __v : Number  //************************not sure
-    });//end Schema
+      city : String
+  });//end Schema
 
 
 
-//create global album model
+//create global
 var listings = mongoose.model( 'listings', listingSchema);
+
 
 
 //uses
@@ -34,4 +34,15 @@ var port = process.env.PORT || 3000;
 //spin up server
 app.listen(port, function(){
    console.log('server is up on:', port);
+});
+
+
+
+//get data from realestate db
+
+app.get('/listings', function(req,res){
+  listings.find().then(function(data){
+    console.log('data please',data);
+    res.send(data);
+  });
 });
