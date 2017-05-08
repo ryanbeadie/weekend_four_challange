@@ -1,26 +1,36 @@
-body {
-    background-color: #DDDDDD;
-}
+
 
 
 h1 {
    color: #111;
    font-family: 'Helvetica Neue', sans-serif;
-   font-size: 75px;
+   font-size: 45px;
    font-weight: bold; l
    etter-spacing: -1px;
    line-height: 1;
-    text-align: center;
+   text-align: center;
 }
 
-#title{
-background-color: red;
+.jumbotron {
 
+
+background-image: url( http://i1.trekearth.com/photos/55473/te_octoberreflection.jpg);
+color: white;
+font-style: italic;
+text-align: center;
 
 }
 
 
 
 .header {
-  background-color: #A9A9A9
+  font-size: 20px;
+   font-style: oblique;
+  background-color:  #85cdfc
+
+}
+
+body{
+background-color: #cccccc
+
 }
